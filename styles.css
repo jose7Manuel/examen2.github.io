@@ -1,0 +1,225 @@
+/* css general*/
+body, header, main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around; 
+    background-color: #333;
+    padding: 10px 0; 
+}
+
+nav a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px;
+    padding: 10px 20px; 
+    border-radius: 40px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+nav a:hover, nav a:focus {
+    background-color: #555; 
+    color: #ffdd40;
+}
+
+nav a:active {
+    background-color: #777; 
+    color: #fff;
+}
+
+nav, .hero-content, .features, .social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav a, .hero-buttons button, .feature button, .social-media button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* css contenedor de imagenes*/
+.container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black; 
+}
+
+.image-container {
+    flex: 1;
+    padding: 10px;
+    text-align: center; 
+    border: 1px solid grey; 
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin-top: 10px; 
+}
+
+.button-container {
+    flex: 1; 
+    padding: 10px;
+    text-align: center; 
+}
+
+
+
+
+/* css carusel */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.carrusel {
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none; 
+    object-fit: cover;
+}
+
+.texto-justificado {
+    width: 45%;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* css menu desplegable*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.d-flex {
+    display: flex; 
+}
+
+.flex-wrap {
+    flex-wrap: wrap; 
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between; 
+}
+
+.col-2 img {
+    width: 100%; 
+    max-width: 2000px; 
+}
+
+.dropdown {
+    position:relative; 
+    padding-left: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #f9f9f9; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white; 
+    padding: 16px; 
+    font-size: 16px; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none; 
+    display: block; 
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; 
+}
+
+.contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px; 
+    width: 80%;
+    margin: 20px auto; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input[type="email"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #007BFF; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-top: 20px; 
+}
